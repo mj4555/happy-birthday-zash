@@ -14,10 +14,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Background canvas for confetti/fireworks -->
-  <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-  <!-- Floating balloons (pure CSS) -->
+  <!-- Floating balloons -->
   <div class="balloons" aria-hidden="true">
     <span class="balloon b1"></span>
     <span class="balloon b2"></span>
@@ -39,7 +37,7 @@
     <button id="sound-btn" class="ghost-btn" aria-pressed="false" aria-label="Toggle music">🔈 Music</button>
   </header>
 
-  <!-- Gate (user gesture to allow audio) -->
+  <!-- Gate (tap to start music & effects) -->
   <div id="gate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
     <div class="gate-card">
       <h2 id="gate-title">Ready for a tiny birthday surprise? 🎁</h2>
@@ -55,7 +53,6 @@
         Happy Birthday <span id="bday-name">Zash</span> ✨
       </h1>
       <p class="sub">Wishing you a day full of smiles, cuddles, and sparkles!</p>
-      <button id="mini-confetti" class="secondary-btn">Shower with confetti 🎉</button>
     </section>
 
     <!-- Love Letter (typewriter) -->
@@ -67,27 +64,28 @@
       </div>
     </section>
 
-    <!-- Surprise Section -->
+    <!-- Surprise Section (Simple Reveal) -->
     <section class="surprise" id="surprise" aria-labelledby="surprise-title">
       <h2 id="surprise-title" class="section-title">Your Surprise 🎁</h2>
       <p class="hint">When you’re ready, click the button below…</p>
-      <button id="surprise-btn" class="primary-btn big">Launch the fireworks ✨</button>
+      <button id="surprise-btn" class="primary-btn big">Open your surprise 💝</button>
       <div id="final-wish" class="final-wish" hidden>
-        <h3>💖 My Birthday Wish for You 💖</h3>
+        <h3>💞 Happy Birthday, Zash 💞</h3>
         <p>
-          May your year be filled with laughter that echoes, hugs that linger,
-          and dreams that find their way to you—just like you found your way to my heart.
+          You’re my favorite person in the world 🫶  
+          I love you sooo much and I’m so happy I get to celebrate your special day with you 💋  
+          You mean everything to me 🩷🎉
         </p>
-        <p class="signature">— With all my love</p>
+        <div style="font-size:2rem; margin-top:10px;">✨💖🎁🎂💞🎉</div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>For <span id="bday-name-foot">Zash hehe my hubby <3</span></p>
+    <p>Made with ❤️ for <span id="bday-name-foot">Zash</span></p>
   </footer>
 
-  <!-- Hidden YouTube player (unmutes on Start) -->
+  <!-- Hidden YouTube music -->
   <iframe
     id="ytplayer"
     title="Background music"
@@ -102,4 +100,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
